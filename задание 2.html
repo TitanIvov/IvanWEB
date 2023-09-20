@@ -1,0 +1,190 @@
+﻿﻿<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" href="task2.css">
+	<link rel="shortcut icon" href="logo.png">
+	<title>Task2</title>
+</head>
+
+<body>
+	<header>
+		<div class="logo-name">
+			<div class="logo">
+				<img src="logo.png" alt="логотип">
+			</div>
+			<h1>task.2 site<h1>
+		</div>
+		<div class="header-content">
+			<div id="dropdown-menu">
+				<p id="button-menu"> навигация </p>
+				<ul id="menu">
+					<li><a href="/main">главная</a></li>
+					<li><a href="#text" title="fragment">новости</a></li>
+					<li><a href="#tab" title="fragment">таблица</a></li>
+				</ul>
+			</div>
+			<nav class="header-menu">
+				<ul>	
+					<a href = "https://www.kubsu.ru/index.php"> kubsu.ru</a>
+					<a href="#sign" title="fragment"> регистрация</a>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<main>
+		<nav>
+			<div class="main-menu">
+				<li class="link_menu-item">ссылка изображение<br>
+					<a href="https://github.com/Ivan>"><img src="image.jpg" width="200" height="200" alt="описание картинки"></a>
+				</li>
+				<ol>
+					<li><a href = "http://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+					<li><a href = "https://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+					<li><a href="/pages/page" title="pages/page"> сокращённяая ссылка на внутреннюю</a>
+					<li><a href="/" title="main"> сокращённая ссылка на главную</a></li>
+					<li><a href="#text" title="fragment"> ссылка на фрагмент текущей страницы</a></li>	
+					<li><a href="http://github.com?parameter1=p1&parameter2=p2&parameter3=p3" title="three parameters"> ссылка с тремф параметрами URL</a></li>
+					<li><a href="http://github.com?id=1000000" title="id"> ссылка с параметром id в URL</a></li>
+				</ol>
+				<ul>
+					<li><a href="page"> относительная ссылка на страницу в текущем каталоге</a><li>
+					<li><a href="./about/page"> относительная ссылка на страницу в каталоге about</a></li>
+					<li><a href="../page"> относительная ссылка на страницу в каталоге уровнем выше текущего</a><li>
+					<li><a href="../../page"> относительная ссылка на страницу в каталоге на два уровня выше текущего</a></li>
+				</ul>
+
+				<ul>
+					<li class="link-menu-item">
+						<p>контекстная <a href="https://youtube.com" stule="display: inline-block"> ссылка</a> в тексте абзаца</p>
+					</li>
+					<li>
+						<a href="http://github.com/Ivan#files"> ссылка на фрагмент стороннего сайта</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p>Ссылки: прямоугольная и круглая область картинки </p>
+						<br>
+						<img src="image.jpg" wight="200" height="200" alt="картинка" usemap="#mmap">
+						<map name="mmap">
+							<area shape="rect" coords="0, 0, 200, 100" href="https://kubsu.ru/" alt="прямоугольная область">
+							<area shape="cicle" coords="100,150,50" href="https://kubstu.ru/" alt="круглая область">
+						</map>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href=""> ссылка с пустым href</a>
+					</li>
+					<li>
+						<a>ссылка без href</a>
+					</li>
+					<li> <a href="http://lucky.re" rel="nofollow"> ссылка, по которой запрещён переход поисковикам</a></li>
+					<li> <a href="http://github.com" rel="nofollow">
+					<!--noindex--> ссылка, запрещённая для индексации поисковиками
+					<!--/noindex-->
+					</a></li>
+					<li> <a href="ftp://user:2334425@youtube.com"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+				</ul>
+			</div>
+			<div class="main-text">
+				<p>
+					<a id="text"></a>
+					<span> Economics (from ancient Greek οἰκονομία, lit. - “the art of housekeeping”) is a social science that studies the production, distribution and consumption of goods and services. Economic reality is the object of scientific economic theories, which are divided into theoretical and applied.
+
+The theoretical direction is also called theoretical economics - it examines the features of the process of exchange, distribution, and choice of how to use limited resources.</span>
+				</p>
+			</div>
+			<a id="tab"></a>
+			<div class="main-table">
+				<table>
+						<tr class="table-header">
+							<th>заголовок 1</th>
+							<th>заголовок 2</th>
+							<th>заголовок 3</th>
+							<th>заголовок 4</th>
+						</tr>
+						<tr class="r-e">
+							<td colspan="2">ячейка 1</td>
+							<td>ячейка 2</td>
+							<td>ячейка 3</td>
+						</tr>
+						<tr class="r-o">
+							<td>ячейка 4</td>
+							<td>ячейка 5</td>
+							<td>ячейка 6</td>
+							<td>ячейка 7</td>
+						<tr>
+						<tr class="r-e">
+							<td colspan="2">ячейка 8</td>
+							<td>ячейка 9</td>
+							<td>ячейка 10</td>
+						</tr>
+						<tr class="r-o">
+							<td colspan="4"> ячейка 11</td>
+						</tr>
+						<tr class="r-e">
+							<td>ячейка 12</td>
+							<td>ячейка 13</td>
+							<td>ячейка 14</td>
+							<td>ячейка 15</td>
+						</tr>
+				</table>
+			</div>
+
+			<a id="sign"></a>
+			<form action="/" method="post" style="display: inherit">
+                <div class="name">
+                    <label for="name" >ФИО</label>
+                    <input type="text" name="ФИО" id="name" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="phone-birth">
+                    <div class="phone-container">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" placeholder="7-999-999-99-99">
+                    </div>
+                    <div class="birth">
+                        <label for="birth">Дата рождения</label>
+                        <input type="date" id="birth">
+                    </div>
+                </div>
+                <div class="gender">
+                    <span>Пол</span>
+                    <input type="radio" name="state" id="male" value="Мужской">
+                    <label for="male">Мужской</label>
+                    <input type="radio" name="state" id="female" value="Женский">
+                    <label for="female">Женский</label><br><br>
+                </div>
+                <div class="language">
+                    <label for="lang">Любимый язык программирования</label>
+                    <select name="lang[]" id="lang" multiple="multiple">
+                        <option value="">C++</option>
+                        <option value="">Python</option>
+                        <option value="">TypeScript</option>
+                        <option value="">Java</option>
+                        <option value="">Assembly</option>
+                        <option value="">Rust</option>
+                        <option value="">Dart</option>
+                    </select>
+                </div>
+                <div class="biog">
+                    <label for="biography">Биография</label>
+                    <textarea name="" id="biography" cols="30" rows="10"></textarea>
+                </div>
+                <div class="agree">
+                    <label for="agree-input">С контрактом ознакомлен</label>
+                    <input type="checkbox" id="agree-input">
+                </div>
+                <button type="submit">Сохранить</button>
+            </form>
+		</nav>
+	</main>
+	<footer>
+		<div class="footer-c">
+			TITAN corporation
+		</div>
+	</footer>
+</body>
+</html>		
