@@ -1,104 +1,87 @@
-﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang= "en">
 
 <head>
 	<meta charset = "UTF-8">
-	<link rel="stylesheet" href="task2.css">
+	<link rel="stylesheet" href="new1.css">
 	<link rel="shortcut icon" href="logo.png">
 	<title>Task2</title>
-</head>
+</head> 	
 
 <body>
-	<header>
-		<div class="logo-name">
-			<div class="logo">
-				<img src="logo.png" alt="логотип">
-			</div>
-			<h1>task.2 site<h1>
+<header>
+	<div class="header-container">
+		<div class="header-title">
+			<img src="logo.png" alt="aaaa">
+			<h1>Site2</h1>
 		</div>
-		<div class="header-content">
-			<div id="dropdown-menu">
-				<p id="button-menu"> навигация </p>
-				<ul id="menu">
-					<li><a href="/main">главная</a></li>
-					<li><a href="#text" title="fragment">новости</a></li>
-					<li><a href="#tab" title="fragment">таблица</a></li>
-				</ul>
-			</div>
-			<nav class="header-menu">
-				<ul>	
-					<a href = "https://www.kubsu.ru/index.php"> kubsu.ru</a>
-					<a href="#sign" title="fragment"> регистрация</a>
-				</ul>
-			</nav> 
+		<div class="header-menu">
+			<ul>
+				<li><a>новости</a></li>
+				<li><a>реклама</a></li>
+				<li><a>таблица</a></li>
+				<li><a>войти</a></li>
+			<ul>
 		</div>
-	</header>
+	</div>
+</header>
 	<main>
 		<nav>
-			<div class="main-menu">
-				<li class="link_menu-item">ссылка изображение<br>
-					<a href="https://github.com/Ivan>"><img src="image.jpg" width="200" height="200" alt="описание картинки"></a>
-				</li>
-				<ol>
-					<li><a href = "http://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
-					<li><a href = "https://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
-					<li><a href="/pages/page" title="pages/page"> сокращённяая ссылка на внутреннюю</a>
-					<li><a href="/" title="main"> сокращённая ссылка на главную</a></li>
-					<li><a href="#text" title="fragment"> ссылка на фрагмент текущей страницы</a></li>	
-					<li><a href="http://github.com?parameter1=p1&parameter2=p2&parameter3=p3" title="three parameters"> ссылка с тремф параметрами URL</a></li>
-					<li><a href="http://github.com?id=1000000" title="id"> ссылка с параметром id в URL</a></li>
-				</ol>
-				<ul>
-					<li><a href="page"> относительная ссылка на страницу в текущем каталоге</a><li>
-					<li><a href="./about/page"> относительная ссылка на страницу в каталоге about</a></li>
-					<li><a href="../page"> относительная ссылка на страницу в каталоге уровнем выше текущего</a><li>
-					<li><a href="../../page"> относительная ссылка на страницу в каталоге на два уровня выше текущего</a></li>
-				</ul>
+			<div class="main-back">
+				<div class="main-content">
+					<li>ссылка изображение<br>
+						<a href="https://github.com/Ivan>"><img src="image.jpg" width="200" height="200" alt="описание картинки"></a>
+					</li>
+					<ol>
+						<li><a href = "http://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+						<li><a href = "https://www.kubsu.ru/index.php"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+						<li><a href="/pages/page" title="pages/page"> сокращённяая ссылка на внутреннюю</a>
+						<li><a href="/" title="main"> сокращённая ссылка на главную</a></li>
+						<li><a href="#tab" title="fragment"> ссылка на фрагмент текущей страницы</a></li>	
+						<li><a href="http://github.com?parameter1=p1&parameter2=p2&parameter3=p3" title="three parameters"> ссылка с тремф параметрами URL</a></li>
+						<li><a href="http://github.com?id=1000000" title="id"> ссылка с параметром id в URL</a></li>
+					</ol>
+					<ul>
+						<li><a href="page"> относительная ссылка на страницу в текущем каталоге</a><li>
+						<li><a href="./about/page"> относительная ссылка на страницу в каталоге about</a></li>
+						<li><a href="../page"> относительная ссылка на страницу в каталоге уровнем выше текущего</a><li>
+						<li><a href="../../page"> относительная ссылка на страницу в каталоге на два уровня выше текущего</a></li>
+					</ul>
 
-				<ul>
-					<li class="link-menu-item">
-						<p>контекстная <a href="https://youtube.com" stule="display: inline-block"> ссылка</a> в тексте абзаца</p>
-					</li>
-					<li>
-						<a href="http://github.com/Ivan#files"> ссылка на фрагмент стороннего сайта</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<p>Ссылки: прямоугольная и круглая область картинки </p>
-						<br>
-						<img src="image.jpg" wight="200" height="200" alt="картинка" usemap="#mmap">
-						<map name="mmap">
-							<area shape="rect" coords="0, 0, 200, 100" href="https://kubsu.ru/" alt="прямоугольная область">
-							<area shape="cicle" coords="100,150,50" href="https://kubstu.ru/" alt="круглая область">
-						</map>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<a href=""> ссылка с пустым href</a>
-					</li>
-					<li>
-						<a>ссылка без href</a>
-					</li>
-					<li> <a href="http://lucky.re" rel="nofollow"> ссылка, по которой запрещён переход поисковикам</a></li>
-					<li> <a href="http://github.com" rel="nofollow">
-					<!--noindex--> ссылка, запрещённая для индексации поисковиками
-					<!--/noindex-->
-					</a></li>
-					<li> <a href="ftp://user:2334425@youtube.com"> Ссылка на файл на сервере FTP с авторизацией</a></li>
-				</ul>
-			</div>
-			<div class="main-text">
-				<p>
-					<a id="text"></a>
-					<span> Economics (from ancient Greek οἰκονομία, lit. - “the art of housekeeping”) is a social science that studies the production, distribution and consumption of goods and services. Economic reality is the object of scientific economic theories, which are divided into theoretical and applied.
-
-The theoretical direction is also called theoretical economics - it examines the features of the process of exchange, distribution, and choice of how to use limited resources.</span>
-				</p>
+					<ul>
+						<li>
+							<p>контекстная <a href="https://youtube.com" stule="display: inline-block"> ссылка</a> в тексте абзаца</p>
+						</li>
+						<li>
+							<a href="http://github.com/Ivan#files"> ссылка на фрагмент стороннего сайта</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>Ссылки: прямоугольная и круглая область картинки </p>
+							<br>
+							<img src="image.jpg" wight="200" height="200" alt="картинка" usemap="#mmap">
+							<map>
+								<area shape="rect" coords="0, 0, 200, 100" href="https://kubsu.ru/" alt="прямоугольная область">
+								<area shape="cicle" coords="100,150,50" href="https://kubstu.ru/" alt="круглая область">
+							</map>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href=""> ссылка с пустым href</a>
+						</li>
+						<li>
+							<a>ссылка без href</a>
+						</li>
+						<li> <a href="http://lucky.re" rel="nofollow"> ссылка, по которой запрещён переход поисковикам</a></li>
+						<li> <!--noindex--><a href="http://github.com">ссылка, запрещённая для индексации поисковиками</a><!--/noindex--></li>
+						<li> <a href="ftp://user:2334425@youtube.com"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+					</ul>
+				</div>
 			</div>
 			<a id="tab"></a>
-			<div class="main-table">
+			<div class="table">
 				<table>
 						<tr class="table-header">
 							<th>заголовок 1</th>
@@ -136,14 +119,14 @@ The theoretical direction is also called theoretical economics - it examines the
 
 			<a id="sign"></a>
 			<form action="/" method="post" style="display: inherit">
-                <div class="name">
+                <div class="input ">
                     <label for="name" >ФИО</label>
-                    <input type="text" name="ФИО" id="name" placeholder="Иванов Иван Иванович">
+                    <input type="text" name="ФИО" id="name" placeholder="Петров Святозар Курочкин">
                 </div>
                 <div class="phone-birth">
                     <div class="phone-container">
                         <label for="phone">Телефон</label>
-                        <input type="text" id="phone" placeholder="7-999-999-99-99">
+                        <input type="tell" id="phone" placeholder="+7 ***-**-**">
                     </div>
                     <div class="birth">
                         <label for="birth">Дата рождения</label>
@@ -162,11 +145,8 @@ The theoretical direction is also called theoretical economics - it examines the
                     <select name="lang[]" id="lang" multiple="multiple">
                         <option value="">C++</option>
                         <option value="">Python</option>
-                        <option value="">TypeScript</option>
                         <option value="">Java</option>
                         <option value="">Assembly</option>
-                        <option value="">Rust</option>
-                        <option value="">Dart</option>
                     </select>
                 </div>
                 <div class="biog">
