@@ -55,6 +55,7 @@
     }
 	main nav{
 		order: 2;
+		margin-bottom: 15 px;
 	}
 	main form{
 		order: 3;
