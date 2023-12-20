@@ -2,25 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>task5</title>
-    <link rel="stylesheet" href="task5.css">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1 id="title">Задание 5</h1>
-        <div class="container">
-            <select name="list[]" id="list">
-                <option value="55">Беляш</option>
-                <option value="55">Чебурек</option>
-                <option value="71">Кекс</option>
-                <option value="40">Пирожок</option>
-                <option value="67">Самса</option>
-            </select>
-            <input type="text" id="count" class="count" placeholder="Количество">
+        <div class="calculator">
+            <div class="calc-head">
+                <h1 id="title">Calculator for task 6</h1>
+            </div>
+            <div class="calc-body">
+                <div class="calc-input">
+                    <div id="product-type-outter" class="plan-container">
+                        <h3 class="calc-text">Выберите тарифный план сервера</h3>
+                        <div id="calc-radio-group" class="plan-fields"></div>
+                    </div>
+                    <input type="text" id="count-6" class="count count-6" placeholder="Количество">
+                            <h3>Опции</h3>
+                            <div id="subproducts" class="input-container">
+                                <select class="option" name="subproducts-select" id="select" disabled>
+                                    <option class="option" value="">Выберите опцию</option>
+                                </select>
+                            </div>
+                            <h3 class="calc-text">Дополнительно</h3>
+                            <div id="property-container">
+                                    <input type="checkbox" name="product-property" id="property" value="" disabled>
+                                    <label for="product-property" id="property-label">Нет</label>
+                            </div>
+                </div>
+                    <button id="button">Рассчитать</button>
+                    <div id="errorlog"></div>
+                    <div id="answer">Ответ</div>
+            </div>
         </div>
-        <button id="button">Рассчёт</button>
-        <div id="errorlog" class="errorlog"></div>
-        <div id="answer">Ответ</div>
     </main>
     <script src="index.js"></script>
 </body>
