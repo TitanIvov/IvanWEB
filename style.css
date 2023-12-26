@@ -1,83 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #460000;
+    --primary-color: #FFF;
+    --secondary-color: #AAA;
+    --secondary-bg-color: #454545;
 }
 
 body {
-    font-family: sans-serif;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #808080;
+    background-color: var(--bg-color);
 }
 
-.container {
-    background-color: #000000;
-    padding: 2dvw;
-    margin-top: 2dvh;
-    min-height: 90dvh;
-    border-radius: 10px;
-}
-
-#openFormButton, #closeFormButton, #send {
-    border-radius: 10px;
-    padding: 1dvw;  
-    background-color: #FFD700;
-    width: 100%;
-    margin-top: 1dvh;
-    font-size: 24px;
-    outline: none;
-    border: none;
-    color: #000;
-    min-height: 100px;
-}
-#closeFormButton {
-    margin-bottom: 1dvh;
-}
-
-#send {
-    background-color: #FFD700;
-    bottom: 0;
-}
-
-.container label {
-    color: #FFD700;
-    font-size: 20px;
-}
-
-.formcarry-block:nth-child(6) {
-    width: 300px;
+.content {
+    height: 100dvh;
+    margin: 30px;
     display: flex;
-    justify-content: space-between;
-}
-.formcarry-block:nth-child(6) label {
-    margin-left: 5px;
-}
-.formcarry-block:nth-child(6) input {
-    width: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
-form input, textarea {
-    width: 100%;
-    font-size: 20px;
-    margin: 1dvh 0;
-    border-radius: 10px;
-    padding: 1dvw 2dvw;
-    background-color: #606060;
-    color: #fff;
-    border: none;
-    outline: none;
-}
-textarea {
-    resize: none;
-}
-form input::placeholder, textarea::placeholder {
-    color: #808080;
+.slider-header {
+    color: #FFF;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
 }
 
-@media (min-width: 960px) {
-    body {
-        max-width: 500px;
+.splide__slide img {
+    width: 50dvw;
+    height: 50dvw;
+    margin-left: calc((50dvw - 100%)/-2);
+}
+
+@media screen and (width >= 640px) {
+    .splide__slide img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
     }
 }
