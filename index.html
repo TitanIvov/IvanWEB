@@ -2,40 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>task 8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
-    <main>
-        <div class="calculator">
-            <div class="calc-head">
-                <h1 id="title">Calculator for task 6</h1>
-            </div>
-            <div class="calc-body">
-                <div class="calc-input">
-                    <div id="product-type-outter" class="plan-container">
-                        <h3 class="calc-text">Выберите тарифный план сервера</h3>
-                        <div id="calc-radio-group" class="plan-fields"></div>
-                    </div>
-                    <input type="text" id="count-6" class="count count-6" placeholder="Количество">
-                            <h3>Опции</h3>
-                            <div id="subproducts" class="input-container">
-                                <select class="option" name="subproducts-select" id="select" disabled>
-                                    <option class="option" value="">Выберите опцию</option>
-                                </select>
-                            </div>
-                            <h3 class="calc-text">Дополнительно</h3>
-                            <div id="property-container">
-                                    <input type="checkbox" name="product-property" id="property" value="" disabled>
-                                    <label for="product-property" id="property-label">Нет</label>
-                            </div>
-                </div>
-                    <button id="button">Рассчитать</button>
-                    <div id="errorlog"></div>
-                    <div id="answer">Ответ</div>
-            </div>
-        </div>
-    </main>
+  <div class="container">
+    <button id="openFormButton">Открыть форму</button>
+    <div id="popupForm" style="display: none;">
+        <button id="closeFormButton">Закрыть форму</button>
+        <section class="formcarry-container">
+            <form action="https://formcarry.com/s/vCOiAcR8vp" method="POST" enctype="multipart/form-data">
+              
+              <div class="formcarry-block">
+                <input type="text" name="name" id="fc-generated-1-name" placeholder="ФИО" />
+              </div>
+                
+              <div class="formcarry-block">
+                <input type="email" name="email" id="fc-generated-1-email" placeholder="Электронная почта" />
+              </div>
+    
+              <div class="formcarry-block">
+                <input type="text" name="phone" id="fc-generated-1-name" placeholder="Номер телефона" />
+              </div>
+    
+              <div class="formcarry-block">
+                <input type="text" name="company" id="fc-generated-1-name" placeholder="Компания" />
+              </div>
+                
+              <div class="formcarry-block">
+                <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Сообщение"></textarea>
+              </div>
+            
+              <div class="formcarry-block">
+                <label for="fc-generated-1-message">Соглашаюсь на обработку данных</label>
+                <input type="checkbox" required="true" name="terms" id="terms">
+              </div>
+                
+              <div class="formcarry-block">  
+                <button id="send" type="submit">Отправить</button>
+              </div>
+            
+            </form>
+          </section>
+    </div>
     <script src="index.js"></script>
+  </div>
 </body>
 </html>
