@@ -1,83 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-margin-top: calc(20vw * 0.9);
+}
+
+:root {
+    --dark-color: #000;
+    --acc-color: #707070;
+}
+
+::selection {
+    color: #000;
+    background-color: var(--acc-color);
 }
 
 body {
-    font-family: sans-serif;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #808080;
+    background-color: #909090;
 }
 
-.container {
-    background-color: #000000;
-    padding: 2dvw;
-    margin-top: 2dvh;
-    min-height: 90dvh;
-    border-radius: 10px;
-}
-
-#openFormButton, #closeFormButton, #send {
-    border-radius: 10px;
-    padding: 1dvw;  
-    background-color: #FFD700;
-    width: 100%;
-    margin-top: 1dvh;
-    font-size: 24px;
-    outline: none;
-    border: none;
-    color: #000;
-    min-height: 100px;
-}
-#closeFormButton {
-    margin-bottom: 1dvh;
-}
-
-#send {
-    background-color: #FFD700;
-    bottom: 0;
-}
-
-.container label {
+header {
+    background-color: var(--acc-color);
+    border: 3px solid #FFD700;
+    border-radius: 20px;
     color: #FFD700;
-    font-size: 20px;
 }
 
-.formcarry-block:nth-child(6) {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-}
-.formcarry-block:nth-child(6) label {
-    margin-left: 5px;
-}
-.formcarry-block:nth-child(6) input {
-    width: 20px;
+#logo {
+    mix-blend-mode: multiply;
+    width: 20vw;
 }
 
-form input, textarea {
-    width: 100%;
-    font-size: 20px;
-    margin: 1dvh 0;
+#name {
+    font-size: 8vw;
+    font-weight: 400;
+}
+
+#navigation-list li a {
+    transition: .2s ease-out;
+}
+
+#navigation-list li {
+    background-color: var(--acc-color);
+    transition: .2s ease-out;
+}
+
+#navigation-list li:nth-child(1) {
+    border: 3px solid #FFD700;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+#navigation-list li:nth-child(2) {
+    border: 3px solid #FFD700;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#navigation-list li:nth-child(3) {
+    border: 3px solid #FFD700;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+}
+
+#navigation-list li:hover {
+    background-color: var(--dark-color);
+    color: #FFD700;
+}
+
+#navigation-list li a:hover {
+    margin: 10px 0;
+    color: #FFF !important;
+    font-weight: 500;
+}
+
+#content > div {
+    margin: 4px;
+    padding: 10px;
+    background-color: #000;
+    backdrop-filter: blur(20px);
+    border: 3px solid #FFD700;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #FFD700;
+}
+
+table {
+    border-collapse: separate;
+}
+
+#table table thead tr th {
+    border: 2px solid #FFD700;
     border-radius: 10px;
-    padding: 1dvw 2dvw;
+    padding: 0 5px;
+    color: #FFD700;
+    font-weight: 500;
+}
+
+#table table tbody tr td {
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: .9em;
+    text-align: center;
+    background-color: var(--acc-color);
+    transition: .5s;
+}
+
+#table table tbody tr:nth-child(odd) td {
+    background-color: var(--acc-color);
+}
+
+#table table tbody tr:nth-child(even) td{
     background-color: #606060;
-    color: #fff;
-    border: none;
-    outline: none;
 }
-textarea {
-    resize: none;
+
+#table table tbody tr td:hover {
+    border-radius: 10px;
+    padding: 5px;
+    font-size: .9em;
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #FFF
 }
-form input::placeholder, textarea::placeholder {
+
+#links {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+}
+
+#links ul {
+    padding: 15px;
+}
+
+#links ul li {
+    color: #FFF;
+    margin: 5px;
+}
+
+#links ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    transition: .5s;
+}
+
+#links ul li a:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#links ul li ol {
+    list-style: none;
+}
+
+#form input, #form select, #form textarea {
+    background-color: var(--dark-color);
     color: #808080;
 }
 
-@media (min-width: 960px) {
-    body {
-        max-width: 500px;
+#form input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(0.6);
+}
+
+#form input::placeholder {
+    color: #808080;
+}
+
+
+footer {
+    color: #FFD700;
+    padding: .5rem;
+    border: 3px solid #FFD700;
+    border-radius: 20px;
+    background-color: #000;
+    backdrop-filter: blur(20px);
+}
+
+
+@media screen and (width >= 992px) {
+    #logo {
+        width: 10vw;
+    }
+
+    #name {
+        font-size: 4vw;
+    }
+
+    #content div {
+        max-width: 980px;
+        margin: 10px auto;
+    }
+
+
+    #navigation-list li a {
+        padding: 10px 30px !important;
+    }
+
+    #navigation-list li:nth-child(1) {
+        border: 3px solid #FFD700;
+        border-right: 0;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    #navigation-list li:nth-child(2) {
+        border: 3px solid #FFD700;
+        border-left: 0;
+        border-right: 0;
+    }
+    
+    #navigation-list li:nth-child(3) {
+        border: 3px solid #FFD700;
+        border-left: 0;
+        border-radius: 0 20px 20px 0;
+    }
+
+    #navigation-list li a:hover {
+        margin: 0 10px;
+        color: #FFF;
+        font-weight: 500;
     }
 }
