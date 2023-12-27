@@ -9,7 +9,7 @@
 }
 
 :root {
-    --bg-color: #460000;
+    --bg-color: #FAFAD2;
     --primary-color: #FFF;
     --secondary-color: #AAA;
     --secondary-bg-color: #454545;
@@ -30,7 +30,7 @@ body {
 }
 
 .slider-header {
-    color: #FFF;
+    color: #87CEFA;
     font-size: 5rem;
     letter-spacing: .2rem;
     font-weight: 400;
